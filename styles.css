@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: 400;
+    color: #00bfc9;
+    letter-spacing: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    margin-left: 35px;
+    font-size: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #00bfc9;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+
+.hero {
+    background: linear-gradient(180deg, #37d2cf 0%, #31c3c0 100%);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 60px;
+    margin: 0;
+}
+
+.hero button {
+    background-color: #ff4668;
+    color: #fff;
+    border: none;
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 18px 45px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.hero button:hover {
+    background-color: #ff6485;
+}
+
+.services {
+    width: 1200px;
+    margin: 80px auto 70px auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+/* === ФІНАЛЬНА ПЕРЕСТАНОВКА ЕЛЕМЕНТІВ: 1.Лампочка, 2.Шестерня, 3.Олівець, 4.Фотоапарат === */
+
+/* Ми явно призначаємо порядок кожному елементу на основі його позиції в HTML: */
+
+.services .service:nth-child(1) { /* WEB DESIGN (Лампочка) */
+    order: 1; /* Позиція 1 */
+}
+
+.services .service:nth-child(2) { /* GRAPHIC DESIGN (Олівець) */
+    order: 3; /* Позиція 3 */
+}
+
+.services .service:nth-child(3) { /* PROGRAMMING (Шестерня) */
+    order: 2; /* Позиція 2 */
+}
+
+.services .service:nth-child(4) { /* PHOTOGRAPHY (Фотоапарат) */
+    order: 4; /* Позиція 4 */
+}
+
+/* ======================================================= */
+
+.service {
+    width: 200px;
+}
+
+.icon img {
+    width: 110px;
+    height: 110px;
+    background-color: #37d2cf;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px auto;
+    padding: 25px;
+}
+
+.service h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.service p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.need-service {
+    margin-bottom: 80px;
+}
+
+.need-service button {
+    background-color: #ff4668;
+    color: #fff;
+    border: none;
+    padding: 20px 50px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.need-service button:hover {
+    background-color: #ff6485;
+}
